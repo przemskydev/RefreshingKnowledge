@@ -1,13 +1,27 @@
 /*
-BLock scope
+Block scope
 Function scope
-Blobal scope
+Global scope
 Nested function
 */
 
-if (true) {
-    const blockScopeVariable = "This is block scope variable value";
-    console.log(blockScopeVariable) //This is block scope variable value
-}
+// *** BLock scope ***
 
-console.log(blockScopeVariable) //ReferenceError: blockScopeVariable is not defined
+if (true) {
+  const scopeVariable = "This is block scope variable value";
+  console.log(scopeVariable); //This is block scope variable value
+}
+// console.log(blockScopeVariable) //ReferenceError: blockScopeVariable is not defined
+
+// *** Function scope ***
+
+const functionScope = () => {
+  const scopeVariable = "This is function scope variable value";
+  // console.log(scopeVariable) //This is function scope variable value
+};
+functionScope();
+// console.log(functionScopeVariable) //ReferenceError: functionScopeVariable is not defined
+
+// *** GLobal scope ***
+
+
