@@ -39,8 +39,3 @@ const makeClass = () => {
 const Book = makeClass()
 
 const zeus = new Book('Tolkien');
-
-console.warn(zeus.writer);
-console.error(zeus.updateAuthor = "Lem")
-console.warn(zeus.writer);
-
